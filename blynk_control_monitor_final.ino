@@ -8,8 +8,8 @@
 #define ledtinggi D3
 
 // Deklarasi variabel autentikasi
-char ssid[] = "gigel.id";     // Wifi name
-char pass[] = "cisanggiri14"; // Paswword Wifi
+char ssid[] = "wifi-name";     // Wifi name
+char pass[] = "password-wifi"; // Paswword Wifi
 char auth[] = "N5ODWRJ5xcgDVGM3UQs0xGRDVxc7_fb9"; // Auth Code from Blynk
 
 // deklarasi variabel sensor HC-SR04
