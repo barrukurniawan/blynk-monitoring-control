@@ -7,9 +7,9 @@
 #define ledrendah D2
 #define ledtinggi D3
 
-char ssid[] = "gigel.id";
-char pass[] = "cisanggiri14";
-char auth[] = "N5ODWRJ5xcgDVGM3UQs0xGRDVxc7_fb9";
+char ssid[] = "wifi-name";
+char pass[] = "password-wifi";
+char auth[] = "N5ODWRJ5xcgDVGM3UQs0xGRDVxc7_fb9"; // auth code from blynk
 
 long duration;
 int distance;
@@ -20,7 +20,7 @@ BLYNK_WRITE(V1)
 {
   int nilai = random(1,999);
   
-  int pinValue = param.asInt(); // assigning incoming value from pin V1 to a variable
+  int pinValue = param.asInt();
   if (pinValue == 1) {
     Blynk.tweet("Bendungan dibuka! \n #IoT " + String(nilai));
     Serial.println("send tweet! " + String(nilai));    
@@ -28,7 +28,6 @@ BLYNK_WRITE(V1)
     Serial.println("Off tweet");
   }
 
-  // process received value
 }
 
 void sendSensor()
